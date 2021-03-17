@@ -1,0 +1,19 @@
+# Understand 
+"Checking input_str to check if there's a unique character. If not, return -1"
+
+# Plan 
+"Define the input_str. If unique value, return int. Else return -1"
+
+# Execute
+def csFirstUniqueChar(s: str):
+
+    for i in range (len(s)):
+        if s.count(s[i]) == 1:
+            return i
+    return -1
+    
+# Review
+
+print(csFirstUniqueChar(s = "lambdaschool"))
+print(csFirstUniqueChar(s = "ilovelambdaschool"))
+print(csFirstUniqueChar(s = "vvv"))
