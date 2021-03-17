@@ -1,0 +1,24 @@
+# Understand
+"str_2 shuffles up str_1 and adds a letter at a random position"
+
+# Plan
+"convert str_1 to an array of each char"
+"iterate through str_2"
+"check if each char is in str_1"
+"if match is found, remove array"
+"return what's left"
+
+# Execute
+
+def csFindAddedLetter(str_1, str_2):
+    list_1 = list(str_1)
+    list_2 = list(str_2)
+    
+    for char in list_1:
+        if char in list_2:
+            list_2.remove(char)
+    
+    return list_2[0]
+    
+# Review
+"input: str_1: bcde, output: str_2: bcdef, expected ouput: f"
